@@ -16,9 +16,18 @@ body {
   color: #222;
 }
 
+/* HEADER BAR */
+
+.header-bar {
+  height: 6px;
+  background: linear-gradient(to right, #e21c2a, #1e73be);
+}
+
+/* MAIN CONTENT */
+
 .container {
   max-width: 760px;
-  margin: 60px auto;
+  margin: 50px auto;
   padding: 35px;
   background: white;
   border-radius: 8px;
@@ -27,7 +36,7 @@ body {
 
 .logo {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .logo img {
@@ -37,7 +46,7 @@ body {
 }
 
 h1 {
-  margin-top: 0;
+  margin-top: 10px;
   color: #1a3d6d;
 }
 
@@ -52,7 +61,7 @@ h2 {
 }
 
 a {
-  color: #1a5fb4;
+  color: #1e73be;
   text-decoration: none;
 }
 
@@ -60,12 +69,33 @@ a:hover {
   text-decoration: underline;
 }
 
+/* CALL-OUT BUTTON */
+
+.cta-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 22px;
+  background-color: #1e73be;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #155a95;
+}
+
+/* CONTACT BOX */
+
 .contact-box {
   background: #f0f4f8;
   padding: 18px;
   border-radius: 6px;
   margin-top: 10px;
 }
+
+/* FOOTER */
 
 .footer {
   margin-top: 35px;
@@ -77,6 +107,8 @@ a:hover {
 </head>
 
 <body>
+
+<div class="header-bar"></div>
 
 <div class="container">
 
@@ -99,13 +131,11 @@ Dr. Mark Lott continues to provide care through the
 To learn more about services or request an appointment, please visit:
 </p>
 
-<p>
-<a href="https://www.nationaljewish.org/doctors-departments/depts/department-of-pediatrics/division-of-pediatric-behavioral-health" target="_blank">
-Division of Pediatric Behavioral Health — National Jewish Health
+<a class="cta-button" href="https://www.nationaljewish.org/doctors-departments/depts/department-of-pediatrics/division-of-pediatric-behavioral-health" target="_blank">
+Visit National Jewish Health Pediatric Behavioral Health
 </a>
-</p>
 
-<p>
+<p style="margin-top:20px;">
 You may also call <strong>(303) 398-1355</strong> or ask your physician to send a referral by fax to <strong>(303) 270-2153</strong>.
 </p>
 
@@ -135,11 +165,9 @@ Please do not send sensitive medical information through regular email unless yo
 </p>
 
 <div class="footer">
-
 <p>
 This webpage is maintained to provide information regarding records requests for former clients of Neuropsychological Solutions, PLLC.
 </p>
-
 </div>
 
 </div>
